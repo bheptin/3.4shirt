@@ -1,0 +1,146 @@
+#shirtboxes {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+h1 {
+    color: #99bbff;
+    font-family: monospace;
+    text-align: center;
+    display: block;
+
+    font-size: 25px;
+}
+.photo {
+    border-color: #99bbff;
+    border-style: solid;
+    margin-left: 40px;
+    height: 320px;
+    margin-top: 20px;
+}
+header {
+    position: absolute;
+    border-color: #99bbff;
+    color: #99bbff;
+    border-style: solid;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    margin-left: 351.4px;
+    margin-top: 20px;
+}
+header:hover {
+    background-color: #99bbff;
+    color: white;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: -7px 0 0;
+}
+li {
+    border-style: solid;
+    border-color: #99bbff;
+    color: #99bbff;
+    display: flex;
+    height: 10px;
+    width: 20px;
+    text-align: center;
+    border: 3px 3px 3px 3px;
+    padding: 8px 20px 20px 21.5px;
+}
+li:hover {
+    background-color: #99bbff;
+    color: white;
+}
+#text1,
+#text2,
+#text3 {
+    color: #99bbff;
+    font-family: sans-serif;
+    display: inline;
+    padding-top: 10px;
+    width: 378px;
+}
+
+h2 {
+    display: inline;
+    margin-left: 140px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.shirtcolor {
+    height: 30px;
+    width: 30px;
+}
+.dropdown {
+    float: left;
+    display: none;
+}
+#sizechart1 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 185px;
+    right: 185px;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+}
+#colorbox1 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 185px;
+    right: 118px;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+}
+#sizechart2 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 176px;
+    right: 201px;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+}
+#colorbox2 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 176px;
+    right: 133px;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+}
+#sizechart3 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 176px;
+    right: 136px;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+}
+#colorbox3 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 176px;
+    right: 69px;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+}
+#cart {
+    text-align: center;
+    border: solid;
+    border-color: #99bbff;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 40px;
+}
