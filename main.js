@@ -11,7 +11,10 @@ $(document).ready(function() {
     function routePiece(n) {
         return location.hash.split("/")[n];
     }
-
+    $("img").click(function() {
+	//logic that makes all shirt boxes disappear
+	//then makes the one that got clicked reappear
+})
 
     function renderAlbum(album) {
         $shirtBoxes.html('');
@@ -19,6 +22,8 @@ $(document).ready(function() {
         $header.hide();
         $shirtPreview.children('li').addClass('shirtAlone');
         $shirtPreview.find('#cart').hide();
+        ///putting this in to get an album together for the one shirt
+        ///without a cart.
     };
 
     data.forEach(function(shirt) {
@@ -61,6 +66,7 @@ $(document).ready(function() {
         </div>`
         );
         $shirtBoxes.append(shirt);
+        ///populating the shirt info
     });
 
     function $shirtPreview() {
@@ -72,9 +78,10 @@ $(document).ready(function() {
         var index = routePiece(1);
         if (routePiece(2) !== 'image' && location.hash !== '#home') {
             shirtPreview(index);
-            $('header').on('click');
+            $('h1').on('click');
         } else if (routePiece(2) === 'src') {
-
+          ///telling the site to look for which shirt when name
+           ///of shirt is clicked on
         }
     });
 
