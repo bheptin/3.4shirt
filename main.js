@@ -5,16 +5,16 @@ $(document).ready(function() {
     var $header = $('i');
 
 
-  $('#cart').hide();
-  location.hash = '#home';
+    $('#cart').hide();
+    location.hash = '#home';
 
-  function renderAlbum (album) {
-    $shirtBoxes.html('');
-    $menu.text(shirt.call).show();
-    $header.hide();
-    $shirtPreview.children('li').addClass('shirtAlone');
-    $shirtPreview.find('#cart').hide();
-  };
+    function renderAlbum(album) {
+        $shirtBoxes.html('');
+        $menu.text(shirt.call).show();
+        $header.hide();
+        $shirtPreview.children('li').addClass('shirtAlone');
+        $shirtPreview.find('#cart').hide();
+    };
 
     data.forEach(function(shirt) {
         var shirt = $(
@@ -58,22 +58,23 @@ $(document).ready(function() {
         $shirtBoxes.append(shirt);
     });
 
-function $shirtPreview (){
-  var shirt = data[Number -1];
-  $('button').hide();
-  $shirtPreview.show();
-}
-$(window).on('hashchange', function () {
-    var index = routePiece(1);
-    if (routePiece(2) !== 'image' && location.hash !== '#home'){
-      shirtPreview(index);
-      $('.shirtPreview li').on('click');
-    } else if (routePiece(2) === 'src'){
-
+    function $shirtPreview() {
+        var shirt = data[Number - 1];
+        $('button').hide();
+        $shirtPreview.show();
     }
-  });
-  function routePiece (n){
-return location.hash.split("/")[n];
-}
+    $(window).on('hashchange', function() {
+        var index = routePiece(1);
+        if (routePiece(2) !== 'image' && location.hash !== '#home') {
+            shirtPreview(index);
+            $('.shirtPreview li').on('click');
+        } else if (routePiece(2) === 'src') {
 
-  });
+        }
+    });
+
+    function routePiece(n) {
+        return location.hash.split("/")[n];
+    }
+
+});
