@@ -8,6 +8,11 @@ $(document).ready(function() {
     $('#cart').hide();
     location.hash = '#home';
 
+    function routePiece(n) {
+        return location.hash.split("/")[n];
+    }
+
+
     function renderAlbum(album) {
         $shirtBoxes.html('');
         $menu.text(shirt.call).show();
@@ -67,14 +72,11 @@ $(document).ready(function() {
         var index = routePiece(1);
         if (routePiece(2) !== 'image' && location.hash !== '#home') {
             shirtPreview(index);
-            $('.shirtPreview li').on('click');
+            $('header').on('click');
         } else if (routePiece(2) === 'src') {
 
         }
     });
 
-    function routePiece(n) {
-        return location.hash.split("/")[n];
-    }
 
 });
